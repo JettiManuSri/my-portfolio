@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manu Sri's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 60px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        ul li h3 {
+            color: #444;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .skills, .education, .experience {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .skills li, .education li, .experience li {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        a {
+            color: #1E90FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Section background colors */
+        section:nth-of-type(odd) {
+            background-color: #e9ecef;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #f8f9fa;
+        }
+
+        /* Hover effects */
+        section:hover {
+            background-color: #e2e6ea;
+            transition: background-color 0.3s ease;
+        }
+
+        .intro {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-top: 100px;
+            transition: opacity 1s ease;
+        }
+
+        .status {
+            font-size: 1.3rem;
+            color: #555;
+            font-weight: normal;
+            transition: opacity 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Manu Sri's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dynamic Intro Section -->
+    <div class="intro">
+        <p>Hello, I am Manu Sri</p>
+        <p class="status" id="status">Tech Enthusiast</p>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate and driven second-year B.Tech Computer Science student with a strong foundation in Python, AI, and web development. I am enthusiastic about building real-world applications that solve pressing issues, especially in the fields of AI, environment, and productivity. I’m a team player with excellent communication skills and a strong interest in learning and applying advanced technologies.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>SATELLITE IMAGE PRE-PROCESSING ON WATER BODIES</h3>
+                <p>This project aims to develop a tool that divides real-time satellite images into sub-images, applies precise masking to detect water bodies, and generates a preprocessed dataset suitable for training machine learning models.</p>
+            </li>
+            <li>
+                <h3>Goal-Oriented To-Do App</h3>
+                <p>Building a mobile app to manage tasks, with features like AI assistance, notifications, and task assignment.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li><strong>Languages:</strong> C, C++, Java, Python</li>
+            <li><strong>Tools & Technologies:</strong> AI, Python, Web Development, Machine Learning, Google AI Studio, Claude AI, Node.js</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="education">
+            <li><strong>B.Tech - Computer Science</strong> (GNITS, 2023-2027) - CGPA: 9.10</li>
+            <li><strong>Intermediate (MPC)</strong> (Alphores Junior College, 2021-2023) - 98.5%</li>
+            <li><strong>High School</strong> (Aryabhatta Group of School, 2020-2021) - 10 GPA</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul class="experience">
+            <li>
+                <h3>Team Lead – Chatbot Development Hackathon</h3>
+                <p>Led a team in a 3-day hackathon, where we developed a chatbot using Google AI Studio and Claude AI. The chatbot was designed to engage users, answer questions, and provide personalized recommendations. I had the honor of anchoring the valedictory session.</p>
+            </li>
+            <li>
+                <h3>Participant – Being Zero and DSA Fundamentals (08/2024)</h3>
+                <p>Mastered Data Structures and Algorithms, including Dynamic Programming and Graph Algorithms, which enhanced my problem-solving and coding skills.</p>
+            </li>
+            <li>
+                <h3>Participant – ML & Applications Workshop (08/2024)</h3>
+                <p>Gained foundational knowledge in Machine Learning applications, expanding my understanding of how to apply ML techniques to real-world problems.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="achievements">
+        <h2>Participations and Achievements</h2>
+        <ul>
+            <li>Collaborated with a team to develop an AI chatbot using Google AI Studio and Claude AI.</li>
+            <li>Certificate of Excellence in Value Added and Personality Development Course by Teenzclap.</li>
+            <li>Certificate of Completion of AI, Python course offered by GreatLearning.</li>
+            <li>Certified on building AI Telugu Model conducted by Swecha.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:manusrijetti30@gmail.com">manusrijetti30@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Manu Sri. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            const status = document.getElementById("status");
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 200 && scrollPosition < 500) {
+                status.textContent = "Student";
+            } else if (scrollPosition >= 500) {
+                status.textContent = "Web Developer";
+            } else {
+                status.textContent = "Tech Enthusiast";
+            }
+        }
+    </script>
+</body>
+</html>
